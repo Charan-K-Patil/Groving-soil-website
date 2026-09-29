@@ -10,6 +10,11 @@ create table if not exists public.visits (
     created_at timestamptz not null default now()
 );
 
+alter table public.visits
+    drop constraint if exists visits_phone_format;
+alter table public.visits
+    add constraint visits_phone_format check (phone ~ '^\+91[0-9]{10}$');
+
 create table if not exists public.admin_users (
     user_id uuid primary key references auth.users (id) on delete cascade,
     created_at timestamptz not null default now()

@@ -30,7 +30,7 @@ if (form && status && submitButton) {
             const data = new FormData(form);
             const { error } = await supabase.from("visits").insert({
                 name: data.get("name").trim(),
-                phone: data.get("phone").trim(),
+                phone: `+91${data.get("phone").trim()}`,
                 email: data.get("email").trim(),
                 visit_date: data.get("visit_date") || null,
                 message: data.get("message").trim(),

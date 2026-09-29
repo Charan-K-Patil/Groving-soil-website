@@ -861,6 +861,28 @@ section {
     letter-spacing: 1.5px;
 }
 
+.phone-input {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(24, 37, 28, 0.35);
+}
+
+.phone-country-code {
+    padding: 14px 12px 14px 0;
+    color: #18251c;
+    font-size: 16px;
+}
+
+.form-field .phone-input input {
+    flex: 1;
+    min-width: 0;
+    border-bottom: 0;
+}
+
+.phone-input:focus-within {
+    border-bottom-color: #18251c;
+}
+
 .form-field input,
 .form-field textarea {
     width: 100%;

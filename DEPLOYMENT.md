@@ -5,7 +5,7 @@ The public site and admin pages are static files served by Vercel. Supabase prov
 ## Supabase
 
 1. Create a Supabase project.
-2. Open `supabase/schema.sql` from this repository, copy its entire contents, paste them into a new query in the Supabase SQL Editor, and click **Run**. Do not paste the filename or quotes; `supabase/schema.sql` is a path, not SQL.
+2. Open `supabase/schema.sql` from this repository, copy its entire contents, paste them into a new query in the Supabase SQL Editor, and click **Run**. Do not paste the filename or quotes; `supabase/schema.sql` is a path, not SQL. Re-run the updated file after future schema changes.
 3. In Supabase Authentication settings, disable public sign-ups. Create the admin account yourself from the Users page.
 4. Add that account to the admin allowlist in the SQL Editor, replacing the email:
 

@@ -429,13 +429,20 @@
                     Phone
                 </label>
 
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="+91 XXXXX XXXXX"
-                    required
-                >
+                <div class="phone-input">
+                    <span class="phone-country-code" aria-hidden="true">+91</span>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        inputmode="numeric"
+                        autocomplete="tel-national"
+                        pattern="[0-9]{10}"
+                        title="Enter exactly 10 digits."
+                        placeholder="98765 43210"
+                        required
+                    >
+                </div>
 
             </div>
 
