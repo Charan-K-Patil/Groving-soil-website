@@ -3,6 +3,18 @@ import { isSupabaseConfigured, supabase } from "./supabase.js";
 const form = document.getElementById("visitForm");
 const status = document.getElementById("visitFormStatus");
 const submitButton = form?.querySelector('button[type="submit"]');
+const visitDateInput = document.getElementById("visit-date");
+
+if (visitDateInput) {
+    const today = new Date();
+    const localDate = [
+        today.getFullYear(),
+        String(today.getMonth() + 1).padStart(2, "0"),
+        String(today.getDate()).padStart(2, "0")
+    ].join("-");
+
+    visitDateInput.min = localDate;
+}
 
 if (form && status && submitButton) {
     if (!isSupabaseConfigured) {
