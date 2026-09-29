@@ -935,6 +935,22 @@ section {
     color: #18251c;
 }
 
+.visit-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.form-status {
+    min-height: 1.5em;
+    margin: 0 0 8px;
+    color: #405447;
+    font-size: 14px;
+}
+
+.form-status[data-state="error"] {
+    color: #a12b24;
+}
+
 
 /* =========================================================
    09. FOOTER

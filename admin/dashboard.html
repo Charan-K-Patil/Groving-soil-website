@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visit Requests | Groving Soil</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="../index.html">GROVING SOIL <span>ROYAL ORCHARDS</span></a>
+        <button class="secondary-button" id="signOutButton" type="button">Sign out</button>
+    </header>
+    <main class="dashboard">
+        <div class="page-heading">
+            <div>
+                <p class="eyebrow">ADMINISTRATION</p>
+                <h1>Visit requests</h1>
+            </div>
+            <label class="search-label" for="searchInput">
+                <span>Search</span>
+                <input id="searchInput" type="search" placeholder="Name, phone or email">
+            </label>
+        </div>
+        <p class="notice" id="dashboardStatus" role="status" aria-live="polite">Loading requests...</p>
+        <section class="stats" aria-label="Lead totals">
+            <article><span>Total</span><strong id="totalCount">0</strong></article>
+            <article><span>New</span><strong id="newCount">0</strong></article>
+            <article><span>Contacted</span><strong id="contactedCount">0</strong></article>
+            <article><span>Closed</span><strong id="closedCount">0</strong></article>
+        </section>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Visit date</th>
+                        <th>Message</th>
+                        <th>Status</th>
+                        <th><span class="visually-hidden">Actions</span></th>
+                    </tr>
+                </thead>
+                <tbody id="leadsTableBody"></tbody>
+            </table>
+            <p class="empty-state" id="emptyState" hidden>No visit requests found.</p>
+        </div>
+    </main>
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>

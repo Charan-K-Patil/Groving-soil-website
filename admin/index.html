@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Sign In | Groving Soil</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body class="login-page">
+    <main class="login-panel">
+        <a class="brand" href="../index.html">GROVING SOIL <span>ROYAL ORCHARDS</span></a>
+        <h1>Admin sign in</h1>
+        <form id="loginForm">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="username" required>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required>
+            <p class="notice" id="loginStatus" role="status" aria-live="polite"></p>
+            <button type="submit">Sign in</button>
+        </form>
+    </main>
+    <script type="module" src="auth.js"></script>
+</body>
+</html>

@@ -377,8 +377,6 @@
 
 
 
-    <script src="js/script.js"></script>
-
     <section id="visit" class="visit">
 
     <div class="visit-heading">
@@ -404,8 +402,6 @@
 <form
     class="visit-form"
     id="visitForm"
-    action="backend/submit_visit.php"
-    method="POST"
 >
 
         <div class="form-row">
@@ -493,6 +489,7 @@
 
         </div>
 
+    <p class="form-status" id="visitFormStatus" role="status" aria-live="polite"></p>
 
         <button
             type="submit"
@@ -564,6 +561,7 @@
     </div>
 </div>
 <script src="js/script.js"></script>
+<script type="module" src="js/booking.js"></script>
 
 </body>
 </html>
